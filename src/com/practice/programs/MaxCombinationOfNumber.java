@@ -10,7 +10,7 @@ public class MaxCombinationOfNumber {
 		// 9 , 54 , 76 , 8 , 26
 		// 98765426
 
-		String[] strArray = { "9", "54", "52", "6", "76", "8", "26" };
+		String[] strArray = { "9", "54", "52", "6", "76", "8", "26", "72" };
 
 		List<String> list = Arrays.stream(strArray).collect(Collectors.toList());
 
@@ -22,13 +22,9 @@ public class MaxCombinationOfNumber {
 			return XY.compareTo(YX) > 0 ? -1 : 1;
 		});
 
-		System.out.println("54".compareTo("45"));
-		System.out.println("54".compareTo("76"));
-		System.out.println("76".compareTo("76"));
-
 		list.stream().forEach(System.out::print);
 
-		int[] intArray = { 9, 54, 52, 6, 76, 8, 26 };
+		int[] intArray = { 9, 54, 52, 6, 76, 8, 26, 72 };
 
 		List<Integer> numList = Arrays.stream(intArray).boxed().collect(Collectors.toList());
 

@@ -20,7 +20,6 @@ public class CheckIfDigitsAreInAscOrder {
 
 		int[] intArray = new int[6];
 		int n = intArray.length;
-		int i = 0;
 		while (number > 0) {
 			int reminder = number % 10;
 			intArray[n - 1] = reminder;

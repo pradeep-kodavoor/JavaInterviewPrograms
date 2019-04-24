@@ -2,14 +2,10 @@ package com.practice.programs;
 
 import java.util.Comparator;
 
-public class Customer implements Comparator {
+public class Customer implements Comparator<Customer> {
 	private int id;
 	private String name;
 
-	// @Override
-	// public String toString() {
-	// return "Customer [id=" + id + ", name=" + name + "]";
-	// }
 
 	public Customer(int id, String name) {
 		super();
@@ -33,8 +29,9 @@ public class Customer implements Comparator {
 		this.name = name;
 	}
 
+
 	@Override
-	public int compare(Object var1, Object var2) {
+	public int compare(Customer var1, Customer var2) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
